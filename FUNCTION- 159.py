@@ -161,22 +161,20 @@
                     #(  OR  )
 
 
-def invert(dict):
-     newd = {}
+# def invert(dict):
+#      newd = {}
 
-     for key,value in dict.items():
-        newd[value] = key
+#      for key,value in dict.items():
+#         newd[value] = key
         
-     return newd
+#      return newd
 
-dict = {'a': 10 , 'b': 20 , 'c' : 30, 'd' : 40, 'e' : 50 , 'f': 60}  
-print(invert(dict))
+# dict = {'a': 10 , 'b': 20 , 'c' : 30, 'd' : 40, 'e' : 50 , 'f': 60}  
+# print(invert(dict))
    
 
 
-        
-
-
+ 
 
 
 
