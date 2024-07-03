@@ -1,0 +1,20 @@
+# TRAPEZIUM:
+# a = int(input('enter value a'))
+# b = int(input('enter value b'))
+# h = int(input('enter value h'))
+# area = (a+b)/2 * h
+# print('area of trapezium is', area)
+
+# DISPLACEMENT:
+# v = int(input(' enter value v'))
+# u = int(input('enter value u'))
+# a = int(input('enter value a'))
+# area = ( v**2 - u**2) / 2 * a  
+# print('displacement is ' , area)
+
+# triangle:
+# base =  float(input('enter base of triangle'))
+# height = float( input('enter heigth of triangle'))
+# area = 1/2 * base * height
+# print ('area of triangle is' , area)
+

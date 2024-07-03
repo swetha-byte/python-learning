@@ -1,0 +1,11 @@
+# # TRAPEZIUM:
+# length = int(input('enter value length: '))
+# breadth = int(input('enter value breadth: '))
+# height = int(input('enter value height: '))
+# area = (length+breadth)/2 * height
+# print ('the area of rectangle with length',length ,'breadth', breadth ,'and height', height ,'is', area)
+
+
+# km = int(input('please enter a value in kms : '))
+# miles = km * 0.62
+# print (km ,'km is' , miles , 'miles')
