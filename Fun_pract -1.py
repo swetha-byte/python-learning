@@ -53,6 +53,21 @@
 
 
 
+## scores ending with zero :                                                      (   163  )
+
+def scores(l):
+    s = 0
+    
+    for i in l:
+       if i %10 == 0:
+           s =s+i
+
+    return s
+
+nums = scores([230,43,679,40,20])       
+print(nums)
+                
+
        
 
 
