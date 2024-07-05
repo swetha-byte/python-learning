@@ -55,21 +55,49 @@
 
 ## scores ending with zero :                                                      (   163  )
 
-def scores(l):
-    s = 0
+# def scores(l):
+#     s = 0
     
-    for i in l:
-       if i %10 == 0:
-           s =s+i
+#     for i in l:
+#        if i %10 == 0:
+#            s =s+i
 
-    return s
+#     return s
 
-nums = scores([230,43,679,40,20])       
-print(nums)
+# nums = scores([230,43,679,40,20])       
+# print(nums)
                 
 
        
+## INVERTING A DICTIONARY :                                                        ( 164 )
 
+# def dict_rev(l):
+
+#     keys=l.keys()
+#     val = l.values()
+#     z = dict(zip(val,keys))  
+   
+#     return z   
+# 
+# 
+
+# def dict_rev(L):
+#     dict1 = {}
+#     for key in L.keys():
+#         dict1[L[key]] = key
+
+#     return dict1  
+
+L1= {'a':1,'b':2,'c':3}
+print(dict_rev(L1))
+
+
+
+
+
+    
+
+    
 
 
 
