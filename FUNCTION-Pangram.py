@@ -67,4 +67,29 @@
 
 
 
+### FLATTEN A NESTED LOOP :                                                 (  169  )
+
+def flatten(l):
+    for e in l:
+        if hasattr(e , '__iter__'):
+            yield from flatten(e)
+        else:
+            yield e
+
+f = flatten([1,2,3,[2,4,5,[1,2,3],3,9],7])
+print(next(f))
+print(next(f))
+print(next(f))           
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+
+
+
        
