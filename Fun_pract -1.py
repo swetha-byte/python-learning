@@ -88,8 +88,63 @@
 
 #     return dict1  
 
-L1= {'a':1,'b':2,'c':3}
-print(dict_rev(L1))
+# L1= {'a':1,'b':2,'c':3}
+# print(dict_rev(L1))
+
+
+
+
+## PANGRAM PHRASE:                                                               (  165  )
+
+# def pangram(phrase):                         
+    
+#     phr = set(phrase)
+#     phr1 = 26
+#     if len(phr) == phr1:
+#         print('pangram')
+
+#     else:
+#         print('not a pangram')
+
+                           #( OR )
+
+# def pangram(phr):
+#     phr1 = set(phr)
+#     alphabet_list = [
+#     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+#     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    
+#     for i in alphabet_list:
+#         if i not in phr1:
+#             return 'not pangram'
+        
+#     return ('pangram')
+
+# print(pangram('abcdefghijklmnpqrstuvwxyzz88999.'))
+
+
+
+
+## CASE COUNTING LETTERS:                                                           (  166  )
+
+def count(phrase):
+    
+    low = 0
+    up = 0
+    for x in phrase:
+       Y= x.islower()
+       low = low + Y
+       z = x.isupper()
+       up = up + z
+
+    return low,up
+print(count('ANjdJD'))    
+
+            
+                
+
+
+        
 
 
 
