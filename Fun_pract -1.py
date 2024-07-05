@@ -127,21 +127,36 @@
 
 ## CASE COUNTING LETTERS:                                                           (  166  )
 
-def count(phrase):
+# def count(phrase):
     
-    low = 0
-    up = 0
-    for x in phrase:
-       Y= x.islower()
-       low = low + Y
-       z = x.isupper()
-       up = up + z
+#     low = 0
+#     up = 0
+#     for x in phrase:
+#        Y= x.islower()
+#        low = low + Y
+#        z = x.isupper()
+#        up = up + z
 
-    return low,up
-print(count('ANjdJD'))    
+#     return low,up
+# print(count('ANjdJD'))    
 
             
                 
+
+## MINIMUM VARIABLE NUMBER:                                                        (  167  )
+
+# def minimum(*var , low_limit):
+
+#     if low_limit is None:
+#         return min(var)
+#     else:
+#         l = [x for x in var if x >= 0]
+#         return min(l)
+    
+# print(minimum(1,2,3,4,-5,6,-1 ,low_limit=0))    
+
+
+
 
 
         
