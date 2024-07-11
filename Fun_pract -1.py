@@ -157,7 +157,19 @@
 
 
 
+# def items(l):
+#     for x in l:
+#         if hasattr(x, '__iter__'):
+#             yield from items(x)
+#         else:
+#             yield x
 
+# list = (items([1,2,[3,4],5]))
+# print(next(list))
+# print(next(list))
+# print(next(list))
+# print(next(list))
+# print(next(list))
 
         
 
@@ -171,3 +183,25 @@
 
 
 
+# ans=input("the capital of canada is :")
+# if(ans=="Ottawa"):
+#     print("you are wise")
+# else:
+#     print("you are ignorant")
+
+
+
+
+def cal():
+
+    try:
+
+        return 1
+
+    finally:
+
+        return 2
+
+k = cal()
+
+print(k)
