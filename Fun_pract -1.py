@@ -192,16 +192,16 @@
 
 
 
-def cal():
+# def cal():
 
-    try:
+#     try:
 
-        return 1
+#         return 1
 
-    finally:
+#     finally:
 
-        return 2
+#         return 2
 
-k = cal()
+# k = cal()
 
-print(k)
+# print(k)
