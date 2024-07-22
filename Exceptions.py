@@ -82,25 +82,72 @@
 
 
 
-class AccounbalanceException(Exception):
-    pass
+# class AccounbalanceException(Exception):                            # (   188-a  )
+#     pass
 
-balance=10000
+# balance=10000
 
-def withdraw(amt):
-    global balance
+# def withdraw(amt):
+#     global balance
 
-    if balance - amt < 5000:
-        raise AccounbalanceException('minimum amt should be 5000')
-    else :
-        b = balance-amt
-        print('Remaining amt is' , b)
+#     if balance - amt < 5000:
+#         raise AccounbalanceException('minimum amt should be 5000')
+#     else :
+#         b = balance-amt
+#         print('Remaining amt is' , b)
 
-try:
-    f = withdraw(int(input('enter amt: ')))
-    print(f)
-except AccounbalanceException as e:
-    print(e)
+# try:
+#     amt = int(input('enter amount: '))
+#     withdraw(amt)
+# except AccounbalanceException as e:
+#     print(e)
 
 
 
+
+
+
+### SIMPLE CALCULATOR :                                              (  189  )
+
+# class InvalidFormulaException(Exception):
+#     pass
+
+# def evaluate(formula):
+#     f = formula.split()
+
+#     if f[1] == '-' or f[1] == '+' or f[1] == '*' or f[1] == '//':
+#         op1 = int(f[0])
+
+#         print(f)
+#     else :
+#         raise InvalidFormulaException('enter the correct operators')
+
+# try:
+#     evaluate(5-2)
+# except InvalidFormulaException as msg:
+#     print(msg)
+
+
+
+
+#   EX:1  #
+
+class ZeroDivisionError(Exception):
+    pass 
+def div(a,b):
+
+    try:
+        c = a // b
+        return c
+    except ZeroDivisionError as msg:
+        print(msg)
+    # finally:
+    #     print('finally block')
+
+# a = int(input('enter first num: '))
+# b = int(input('enter second num: '))
+z = div(10,0)
+
+print(z)
+
+    
