@@ -218,44 +218,101 @@
 ###  IPC USING QUEUE :                
 
 
+# from threading import*
+# from time import*
+# from queue import*
+
+# q =Queue()
+
+# def producer(que):
+#     i= 1
+#     while True:
+#         que.put(i)
+#         sleep(1)
+#         print('producer ',i)
+#         i += 1
+
+# def consumer(que):
+#     while True:
+#         d = que.get()    
+#         print('consumer ',d)
+#         sleep(1)
+       
+
+# t = Thread(target=lambda:producer(q)) 
+# t1 = Thread(target=lambda:consumer(q))
+
+# t.start()
+# t1.start()
+
+# t.join()
+# t1.join()
+
+
+
+
+
+
+
+###             (  MULTITHREADING USING A  (FUNCTION / METHOD)   )
+
+
+# from threading import*
+# from time import*
+
+# def multitread():
+#     for i in range(65,91):
+#         print(chr(i))
+#         sleep(1)
+
+# t = Thread(target=multitread,name='alphabets')
+# t.start()
+
+# for i in range(65,91):
+#     sleep(1)
+#     print(i)
+
+# t.join()
+
+
+
+
+
+# ###           (    MULTITHREADING USING A CLASS    )
+
+# from threading import*
+
+# class alphabets(Thread):
+#     def run(self): 
+#        for i in range(65,91):
+#           print(chr(i))
+
+# d = alphabets()
+# d.start()
+
+# for i in range(65,91):
+#     print(i)
+
+# d.join()
+
+
+
+
 from threading import*
-from time import*
-from queue import*
 
-q =Queue()
+class alphabets(Thread):
 
-def producer(que):
-    i= 1
-    while True:
-        que.put(i)
-        sleep(1)
-        print('producer ',i)
-        i += 1
+    def run(self):
+        for i in range(65,91):
+            print(chr(i))
 
-def consumer(que):
-    while True:
-        d = que.get()
-       
-        print('consumer ',d)
-        sleep(1)
-       
 
-t = Thread(target=lambda:producer(q)) 
-t1 = Thread(target=lambda:consumer(q))
-
+t = alphabets()
 t.start()
-t1.start()
 
+for i in range(65,91):
+    print(i)
 t.join()
-t1.join()
-
-
-
-
-
-
-
-
 
 
 
