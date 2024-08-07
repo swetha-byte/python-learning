@@ -824,33 +824,73 @@
 
 ### RATIONAL NUMBER :                           (   231  )
 
-class rational:
+# class rational:
 
-    def __init__(self,p=1,q=1):
-        self.p = p
-        self.q = q
+#     def __init__(self,p=1,q=1):
+#         self.p = p
+#         self.q = q
 
-    def __add__(self,other):
-        num = (self.p*other.q) +(self.q*other.p)
-        deno = self.q*other.q
-        sum = rational(num,deno)
-        return sum
+#     def __add__(self,other):
+#         num = (self.p*other.q) +(self.q*other.p)
+#         deno = self.q*other.q
+#         sum = rational(num,deno)
+#         return sum
 
-    def __sub__(self,other):
-        r = rational()
-        r.p = (self.p*other.q) - (self.q*other.p)
-        r.q = self.q*other.q
-        return r
+#     def __sub__(self,other):
+#         r = rational()
+#         r.p = (self.p*other.q) - (self.q*other.p)
+#         r.q = self.q*other.q
+#         return r
     
-    def __str__(self):
-        return str(self.p) +'/'+str(self.q)
+#     def __str__(self):
+#         return str(self.p) +'/'+str(self.q)
     
-r1= rational(3,5)
-r2=rational(5,7)
-sum =r1+r2
-print(sum)    
+# r1= rational(3,5)
+# r2=rational(5,7)
+# sum =r1+r2
+# print(sum)    
     
 
+
+
+
+# ###  SHOPPING CART:                         (   232  )
+
+# class orders:
+
+#     def __init__(self):
+#         self.cart = []
+
+#     def add_to_cart(self,item):
+#         self.item = item
+#         return self.cart.append(self.item)
+    
+#     def remove_item(self,r_item):
+#         self.remove = r_item
+#         return self.cart.remove(self.remove)
+    
+#     def __len__(self):
+#         return len(self.cart) 
+
+#     def __str__(self):
+#         items = 'cart contents :'
+#         for i in self.cart:
+#             items += i+','
+#         return items
+
+# o = orders()
+# o.add_to_cart('paste')
+# o.add_to_cart('soap')
+# o.add_to_cart('brush')
+# o.add_to_cart('shoes')
+# print(o)
+# print(len(o))
+# (o.remove_item('soap'))
+# print(o)
+
+
+        
+            
 
 
 
