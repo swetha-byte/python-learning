@@ -14,8 +14,15 @@
 
 # for i in range(65,91):
 #     print(i)
+#     if(i==70):
+#         t.join()
 #     sleep(1)
-# t.join() 
+# sleep(3)
+# print("arun")
+# t.join()
+# sleep(2)
+
+# print("kumar")
 
 
 
@@ -476,7 +483,7 @@
 # from queue import*
 
 # q = Queue()
-
+ 
 # def producer(que):
 #     i = 1
 #     while True:
