@@ -414,7 +414,7 @@
 
 
 
-# ###    IPC using Cnditions  ###
+# ###    IPC using Conditions  ###
 
 # from threading import*
 # from time import*
@@ -449,7 +449,7 @@
 #         print('producer :',i)
 #         i += 1
 
-# def consumer(data):#
+# def consumer(data):
 #     while True:
 #        x = data.get()
 #        print('consumer :',x)
@@ -469,9 +469,36 @@
 
 
 
+# ###  IPC using QUEUE ### 
 
+# from threading import*
+# from time import*
+# from queue import*
 
+# q = Queue()
 
+# def producer(que):
+#     i = 1
+#     while True:
+#         que.put(i)
+#         print('producer :',i)
+#         i += 1
+#         sleep(1)
+
+# def consumer(que):
+#     while True:
+#         x = que.get()
+#         print('consumer :',x)
+#         sleep(1)
+
+# t1 = Thread(target=lambda:producer(q))
+# t2 = Thread(target=lambda:consumer(q))
+    
+# t1.start()
+# t2.start()
+
+# t1.join()
+# t2.join()
 
 
 
