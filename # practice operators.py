@@ -71,3 +71,5 @@
 s1 = 'hello=world'
 # print(s1.split())
 print(s1.split('='))
+
+arun is a good boy
