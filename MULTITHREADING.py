@@ -354,65 +354,116 @@
 
 
 
-###    I P C    (   )   ###
+# ###    I P C    ( using lock and flag method  )   ###
 
-from threading import*
-from time import*
+# from threading import*
+# from time import*
 
-class mydata:
+# class mydata:
 
-    def __init__(self):
+#     def __init__(self):
 
-        self.data = 0
-        self.flag = False
-        self.lock = Lock()
+#         self.data = 0
+#         self.flag = False
+#         self.lock = Lock()
 
-    def put(self,d):
-        while self.flag == True:
-            pass
-        self.lock.acquire() 
-        self.data = d
-        self.flag =True
-        sleep(1)
-        self.lock.release()
+#     def put(self,d):
+#         while self.flag == True:
+#             pass
+#         self.lock.acquire() 
+#         self.data = d
+#         self.flag =True
+#         sleep(1)
+#         self.lock.release()
 
-    def get(self):
-        while self.flag == False:
-            pass
-        self.lock.acquire()
-        x = self.data
-        self.flag = False
-        sleep(1)
-        self.lock.release()
-        return x
+#     def get(self):
+#         while self.flag == False:
+#             pass
+#         self.lock.acquire()
+#         x = self.data
+#         self.flag = False
+#         sleep(1)
+#         self.lock.release()
+#         return x
     
-def producer(data):
-    i = 1
-    while True:
-        data.put(i)
-        print('producer :',i)
-        i += 1
+# def producer(data):
+#     i = 1
+#     while True:
+#         data.put(i)
+#         print('producer :',i)
+#         i += 1
 
-def consumer(data):
-    while True:
-        x = data.get()
-        print('consumer :',x)
+# def consumer(data):
+#     while True:
+#         x = data.get()
+#         print('consumer :',x)
 
-data1 = mydata()
+# data1 = mydata()
 
-t1 = Thread(target=lambda:producer(data1))
-t2 = Thread(target=lambda:consumer(data1))
+# t1 = Thread(target=lambda:producer(data1))
+# t2 = Thread(target=lambda:consumer(data1))
            
-t1.start()
-t2.start()
+# t1.start()
+# t2.start()
 
-t1.join()
-t2.join()
-
-
+# t1.join()
+# t2.join()
 
 
 
+
+
+
+# ###    IPC using Cnditions  ###
+
+# from threading import*
+# from time import*
+
+# class mydata:
+
+#     def __init__(self):
+#         self.data = 0
+#         self.cv =Condition()
+
+#     def put(self,d):
+#         self.cv.acquire()
+#         self.cv.wait(timeout=0)
+#         self.data = d
+#         self.cv.notify()
+#         sleep(1)
+#         self.cv.release()
+
+#     def get(self):
+#         self.cv.acquire()
+#         self.cv.wait(timeout=0)
+#         x = self.data
+#         self.cv.notify()
+#         sleep(1)
+#         self.cv.release()
+#         return x  
+
+# def producer(data):
+#     i = 1
+#     while True: 
+#         data.put(i)
+#         print('producer :',i)
+#         i += 1
+
+# def consumer(data):#
+#     while True:
+#        x = data.get()
+#        print('consumer :',x)
+
+# d = mydata()
+
+# t1 = Thread(target=lambda:producer(d))
+# t2 = Thread(target=lambda:consumer(d))
+
+# t1.start()
+# t2.start()
+
+# t1.join()
+# t2.join()
 
 
 
