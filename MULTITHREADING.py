@@ -298,22 +298,28 @@
 
 
 
+
+###                        (  MUTEX  )                       ##
+
 from threading import*
+from time import*
 
-class alphabets(Thread):
+def display(str1):
+    l.acquire()
+    for x in str1:
+        print(x)
+    l.release()
 
-    def run(self):
-        for i in range(65,91):
-            print(chr(i))
 
+l = Lock()
+t1 = Thread(target=display,args=('LEARNING PYTHON ',))
+t2 = Thread(target=display,args=('you are welcome ',))
 
-t = alphabets()
-t.start()
+t1.start()
+t2.start()
 
-for i in range(65,91):
-    print(i)
-t.join()
-
+t1.join()
+t2.join()
 
 
 
