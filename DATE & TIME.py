@@ -39,15 +39,15 @@
 
 
 
-###   STRING TO OBJECT DATE:           (  249  )
+# ###   STRING TO OBJECT DATE:           (  249  )
 
-import datetime
+# import datetime
 
-str_date = input('enter date in the form of DD-MM-YYYY : ')
+# str_date = input('enter date in the form of DD-MM-YYYY : ')
 
-d,m,y = str_date.split('-')
-d1 = datetime.date(int(y),int(m),int(d))
-print(d1)
+# d,m,y = str_date.split('-')
+# d1 = datetime.date(int(y),int(m),int(d))
+# print(d1)
 
 
 
