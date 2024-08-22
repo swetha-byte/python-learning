@@ -1,6 +1,6 @@
 ###  MONTHS STRATING FROM MONDAY :             (  247  ) 
 
-# # from datetime import*
+# from datetime import*
 
 # import datetime
 # year = int(input('enter year : '))
@@ -53,23 +53,43 @@
 
 
 
-###  CALCULATE AGE:              (   250  )
+# ###  CALCULATE AGE:              (   250  )
+
+# from datetime import date
+
+# def age(dob):
+
+#     today = date.today()
+#     years = today.year - dob.year
+
+#     if (today.month , today.day) < (dob.month , dob.day):
+#         years -= 1
+
+#     return years
+  
+# print('Age:',age(date(1998,4,11)))
+
+
+
+
+
+
+###  LAST THURSDAY's Date:      ( 251 )
 
 from datetime import date
+ 
+def prev_day(day):
+    week_days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
-def age(dob):
+    tw_day = date.today()
+    day_wk = date.weekday(3)
+    diff = day_wk - tw_day
+    return diff
 
-    today = date.today()
-    years = today.year - dob.year
+days = prev_day('Thursday')
+print(days)
 
-    if (today.month , today.day) < (dob.month , dob.day):
-        years -= 1
-
-    return years
-  
-print('Age:',age(date(1998,4,11)))
-
-
+      
 
 
 
