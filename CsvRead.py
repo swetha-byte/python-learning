@@ -45,23 +45,46 @@
 # f.close()    
 
 
+
+
+
 ## CSV DICTIONARY WRITER:
-import csv
 
-covid = [
-         {'country':'india','doses':'186cr','people':'84.1cr','percentage':61},
-         {'country':'china','doses':'330cr','people':'124cr','percentage':88.1},
-         {'country':'us','doses':'56.8cr','people':'21.9cr','percentage':66.4},
-         {'country':'brazil','doses':'42.4cr','people':'16.2cr','percentage':76.4}
-         ]
+# import csv
 
-f=open('coviddict.csv','w',newline='')
-fields = ['country','doses','people','percentage']
+# covid = [
+#          {'country':'india','doses':'186cr','people':'84.1cr','percentage':61},
+#          {'country':'china','doses':'330cr','people':'124cr','percentage':88.1},
+#          {'country':'us','doses':'56.8cr','people':'21.9cr','percentage':66.4},
+#          {'country':'brazil','doses':'42.4cr','people':'16.2cr','percentage':76.4}
+#          ]
 
-wrtr = csv.DictWriter(f,fields)
-wrtr.writeheader()
+# f=open('coviddict.csv','w',newline='')
+# fields = ['country','doses','people','percentage']
 
-for d in covid:
-    wrtr.writerow(d)
+# wrtr = csv.DictWriter(f,fields)
+# wrtr.writeheader()
 
-f.close()
+# for d in covid:
+#     wrtr.writerow(d)
+
+# f.close()
+
+
+
+    
+# my_list = []  # Creating an empty list.
+
+# for i in range(5):
+#     my_list.insert(0, i + 1)
+
+# print(my_list)
+
+# list =[]
+
+# for x in range(10):
+    
+#     list.append(x+1)
+    
+    
+# print(list)
